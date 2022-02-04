@@ -92,14 +92,17 @@ SQR.reader = (() => {
     }
 })()
 
-alert('棚のQRコードを撮影してください')
 
 SQR.modal = (() => {
     const result = document.querySelector('#js-result')
+    const tanaban = document.querySelector('#tana')
     const link = document.querySelector('#js-link')
     const copyBtn = document.querySelector('#js-copy')
     const modal = document.querySelector('#js-modal')
     const modalClose = document.querySelector('#js-modal-close')
+
+    alert('棚のQRコードを撮影してください')
+
 
     /**
      * 取得した文字列を入れ込んでモーダルを開く
@@ -108,6 +111,10 @@ SQR.modal = (() => {
         result.value = url
         link.setAttribute('href', url)
         modal.classList.add('is-show')
+    }
+
+    const tuika = ()=>{
+        result.value = tanaban
     }
 
     /**
