@@ -104,7 +104,7 @@ SQR.modal = (() => {
      */
     const addList = (id) => {
         result.value = id
-        link.setAttribute('href', id)
+        // link.setAttribute('href', id)
         modal.classList.add('is-show')
     }
 
