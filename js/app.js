@@ -113,9 +113,9 @@ SQR.modal = (() => {
         modal.classList.add('is-show')
     }
 
-    const tuika = ()=>{
-        result.value = tanaban
-    }
+    // const tuika = ()=>{
+    //     result.value = tanaban
+    // }
 
     /**
      * モーダルを閉じてQR読み込みを再開
