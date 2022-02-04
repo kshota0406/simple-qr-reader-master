@@ -102,9 +102,9 @@ SQR.modal = (() => {
     /**
      * 取得した文字列を入れ込んでモーダルを開く
      */
-    const addList = (id) => {
-        result.value = id
-        link.setAttribute('href', id)
+    const addList = (url) => {
+        result.value = url
+        link.setAttribute('href', url)
         modal.classList.add('is-show')
     }
 
