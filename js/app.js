@@ -140,7 +140,7 @@ SQR.modal = (() => {
 })()
 
 function append() {
-    // let textbox = document.getElementById('textbox');
+    const result = document.querySelector('#js-result')
     // li要素を生成
     var li = document.createElement('li');
     // テキストノードを生成
