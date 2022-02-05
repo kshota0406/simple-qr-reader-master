@@ -94,7 +94,7 @@ SQR.reader = (() => {
 
 
 SQR.modal = (() => {
-    const result = document.querySelector('.js-result')
+    const result = document.querySelector('#js-result')
     const tanaban = document.querySelector('#tana')
     const link = document.querySelector('#js-link')
     const copyBtn = document.querySelector('#js-copy')
