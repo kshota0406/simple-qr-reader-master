@@ -110,7 +110,7 @@ SQR.modal = (() => {
     const open = (url) => {
         result.value = url
         link.setAttribute('href', url)
-        modal.classList.add('is-show')
+        // modal.classList.add('is-show')
     }
 
     // const tuika = ()=>{
@@ -121,7 +121,7 @@ SQR.modal = (() => {
      * モーダルを閉じてQR読み込みを再開
      */
     const close = () => {
-        modal.classList.remove('is-show')
+        // modal.classList.remove('is-show')
         SQR.reader.findQR()
     }
 
