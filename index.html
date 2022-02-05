@@ -46,11 +46,12 @@
             <div class="modal">
                 <div class="modal-cnt">
                     <span class="modal-title">読み取り結果</span>
-
+                    <textarea id="js-result" class="modal-result" type="text"
+                    value="" readonly></textarea>
                 </div>
-                <a href="" id="js-link" class="modal-btn" target="_blank">
+                <input type="button" value="追加" onclick="append()">
                     入庫リストに追加
-                </a>
+                
                 <button id="js-copy" class="modal-btn" target="_blank">
                     入庫リストに追加しない
                 </button>
@@ -61,9 +62,9 @@
         </div>
         <ul id="lists">
         </ul>
-        <textarea id="js-result" class="modal-result" type="text"
-        value="" readonly></textarea>
-        <!-- <input type="button" value="追加" onclick="append()"> -->
+        <!-- <textarea id="js-result" class="modal-result" type="text"
+        value="" readonly></textarea> -->
+    
         
 
         <script src="./js/jsQR.js"></script>
