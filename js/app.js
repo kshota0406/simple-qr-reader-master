@@ -144,9 +144,9 @@ function append() {
     // li要素を生成
     var li = document.createElement('li');
     // テキストノードを生成
-    var text = document.createTextNode(js-result.value);
+    var text = document.createTextNode(result.value);
     // liタグの要素に、テキストノード textを追加
-    li.appendChild(js-result);
+    li.appendChild(result);
     // idがlistsのulタグに、liを追加。具体的には<li>追加文字列</li>が、追加される。
     lists.appendChild(li);
   }
