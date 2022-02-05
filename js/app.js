@@ -141,21 +141,15 @@ SQR.modal = (() => {
 
 function append() {
     const result = document.querySelector('#js-result')
-    let count =0;
-    while(count<10){
-      console.log(count);
-      count++;
     // li要素を生成
     var li = document.createElement('li');
     // テキストノードを生成
-    var text = document.createTextNode(result.value);
+    var resultList = document.createTextNode(result.value);
     // liタグの要素に、テキストノード textを追加
-    li.appendChild(result);
+    li.appendChild(resultList);
     // idがlistsのulタグに、liを追加。具体的には<li>追加文字列</li>が、追加される。
     lists.appendChild(li);
 }
-}
-  
   
 
 if (SQR.reader) SQR.reader.initCamera()
